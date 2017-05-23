@@ -1,3 +1,7 @@
+require "github/markup"
+
+GitHub::Markup.render(README.md, File.read(file))
+
 # General Information
 ##Author:## MechMike
 ##Date Created:## May 23, 2017
