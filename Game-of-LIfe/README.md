@@ -1,6 +1,6 @@
 require "github/markup"
 
-GitHub::Markup.render(README.md, File.read(file))
+GitHub::Markup.render(README.md, File.read(README.md))
 
 # General Information
 ##Author:## MechMike
