@@ -1,15 +1,55 @@
 /* ElEMENT SELECTORS */
-html {
-  font-size: 100%;
+* {
+	background: url("Images/conway_background.jpeg") no-repeat center center fixed; 
+  	-webkit-background-size: cover;
+ 	-moz-background-size: cover;
+  	-o-background-size: cover;
+ 	background-size: cover;
+}
+
+header {
+	text-align: center;
+	margin: 0 auto;
+}
+/*
+header li {
+	display: inline;
+	font-family: 'Architects Daughter';
+	color: white;
+	border: 1px solid black;
+	padding: 10px 20px;
+} */
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+a:hover {
+	color: rgba(59, 100, 48, 1);
+	font-weight: bold;
+	text-decoration: none;
+}
+
+li {
+  display: inline;
+  padding: 5px 10px;
+  font-family: 'Architects Daughter';
+  text-align: center;
+  color: white;
+  border: 1px solid black;
+  margin: 0 10px;
 }
 
 footer li {
-  display: inline;
-  padding-right: 20px;
+	width: 10px;
 }
 
 /* CLASS SELECTORS */
-
+.title {
+	font-family: 'Cedarville Cursive';
+	color: white;
+}
 .game-window { 
 	/*
 	height: 25rem;
@@ -60,8 +100,9 @@ footer li {
 
 /* FOR DEVELOPMENT */
 
+/*
 * {
 	/*
   	border: 1px solid black;
-	*/
-}
+	
+} */

@@ -6,7 +6,7 @@ Contact: makerdude9@gmail.com
 Description: 
 	Simple wepage that runs a version of Conway's Game of Life
 -->
-<html>
+<html lang="en">
 
 <!-- HEAD: FUNCTIONAL DATA -->
 <head>
@@ -16,14 +16,24 @@ Description:
   <title>Game of Life</title>
   
   <!-- STYLESHEET LINKS -->
-  <link rel="stylesheet "href="style.css" type="text/css"/>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="styles2.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <!-- FONTS -->
+  <link href="https://fonts.googleapis.com/css?family=Architects+Daughter" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cedarville+Cursive" rel="stylesheet">
   
   <!-- SCRIPT LINKS -->
   <script src="life.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>   
+  
+  <!-- INLINE STYLES -->
+  <style> 
+	 
+  </style>
 </head>
 
 <!-- BODY: WEBPAGE DISPLAY -->
@@ -32,11 +42,11 @@ Description:
 	<!-- HEADER -->
 	<header class="container">
         <div class="row">
-          <h1 >The Game of Life</h1>
+          <h1 class="title">The Game of Life</h1>
         </div>
         <div class="row">
             <ul>
-                <li>Wikipedia </li>
+                <li><a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia</a></li>
                 <li>About Project</li>
                 <li>Author</li>
             </ul>
@@ -55,13 +65,12 @@ Description:
 	<!-- FOOTER -->
 	<footer class="container">
 	     <div class="row">
-	        <p class="col-sm-4"> </p>
-	        <ul class="colo-sm-8">
-	          <li class="col-sm-1">List item 1</li>
-	          <li class="col-sm-1">List item 2</li>
-	          <li class="col-sm-1">List item 3</li>
+	        <ul>
+	          <li class="col-sm-4">List item 1</li>
+	          <li class="col-sm-4">List item 2</li>
+	          <li class="col-sm-4">List item 3</li>
 	        </ul>
-	      </div>
+	     </div>
 	</footer>
 </body>
 </html>
