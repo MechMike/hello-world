@@ -3,28 +3,42 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <title>Game of Life</title>
+  
+  <link rel="stylesheet "href="style.css" type="text/css"/>
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="life.js" type="text/javascript"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </head>
 <body>
   <header class="container">
         <div class="row">
-          <h1 class="col-sm-4">The Game of Life</h1>
-
-          <nav class="col-sm-8 text-right">
-            <p>Wikipedia Article</p>
-            <p>About Project</p>
-            <p>Author</p>
-          </nav>
+          <h1 >The Game of Life</h1>
+        </div>
+        <div class="row">
+          
+			  
+            <ul>
+                <li>Wikipedia </li>
+                <li>About Project</li>
+                <li>Author</li>
+            </ul>
+            
+          
         </div> 
       </header>
-      <section class="jumbotron">
-        <div class="container">
+      <section class="container">
           <div class="row text-center">
-            <div id="wrapper"></div>
+              <div id="game-display">
+                  <div id="wrapper"></div>
+              </div>
           </div>
-        </div>
       </section>
-  
 </body>
 </html>
