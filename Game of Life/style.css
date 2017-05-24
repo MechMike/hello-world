@@ -1,11 +1,4 @@
-
 /* ElEMENT SELECTORS */
-
-/*
-* {
-  border: 1px solid black;
-} */
-
 html {
   font-size: 100%;
 }
@@ -16,21 +9,25 @@ footer li {
 }
 
 /* CLASS SELECTORS */
-/*
-.game-window {
-  height: 25rem;
-  width: 25rem;
-  border: 1px solid black;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-} */
 
-/*
-.row, .box {
+.game-window { 
+	/*
+	height: 25rem;
+	width: 25rem;
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	margin: auto; 
+	*/
+} 
+
+
+.row, .box { 
+	/*
     height: 50px;
-    width: 50px;
-} */
+    width: 50px; 
+	*/
+}
 
 .lane {
     width: auto;
@@ -61,3 +58,10 @@ footer li {
     
 }
 
+/* FOR DEVELOPMENT */
+
+* {
+	/*
+  	border: 1px solid black;
+	*/
+}
