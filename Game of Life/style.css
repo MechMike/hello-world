@@ -1,5 +1,8 @@
 /* ElEMENT SELECTORS */
-* {
+html {
+	font-size: 100%;
+}
+body {
 	background: url("Images/conway_background.jpeg") no-repeat center center fixed; 
   	-webkit-background-size: cover;
  	-moz-background-size: cover;
@@ -9,8 +12,10 @@
 
 header {
 	text-align: center;
+	width: 100%;
 	margin: 0 auto;
 }
+
 /*
 header li {
 	display: inline;
@@ -19,16 +24,22 @@ header li {
 	border: 1px solid black;
 	padding: 10px 20px;
 } */
-
-a {
+ul {
+	padding: 0;
+}
+li a {
 	text-decoration: none;
 	color: white;
 }
 
-a:hover {
+li a:hover {
 	color: rgba(59, 100, 48, 1);
 	font-weight: bold;
 	text-decoration: none;
+}
+
+header li {
+	width:100%;
 }
 
 li {
@@ -39,27 +50,28 @@ li {
   color: white;
   border: 1px solid black;
   margin: 0 10px;
+  font-size: 2em;
+  background: rgba(0,0,0,0.30);
+}
+
+footer {
+	text-align: center;
 }
 
 footer li {
 	width: 10px;
+	font-size: 1em;
 }
 
 /* CLASS SELECTORS */
 .title {
 	font-family: 'Cedarville Cursive';
 	color: white;
+	font-size: 5em;
+	padding: 10px;
+	margin-bottom: 10px;
 }
-.game-window { 
-	/*
-	height: 25rem;
-	width: 25rem;
-	border: 1px solid black;
-	display: flex;
-	justify-content: center;
-	margin: auto; 
-	*/
-} 
+
 
 
 .row, .box { 
@@ -72,7 +84,7 @@ footer li {
 .lane {
     width: auto;
     height: auto; 
-    background: #313131;
+    /* background: #313131; */
     display: flex;
     justify-content: center;
 }
@@ -80,22 +92,45 @@ footer li {
     width: 2.5rem; 
     height: 0.25rem; 
     margin: 0px;
-    outline: 1px solid;
+    border: 0.5px solid black;
     display: inline-block;
     float: left;
-    background: #FFFFFF;
+    /* background: #FFFFFF; */
+}
+
+#game-content {
+	/* padding: 10px 0; */
+	justify-content: center;
 }
 
 /* ID SELECTORS */
 #wrapper {
-    width: 25rem;
-    height: 25rem;
-    margin-left: auto;
-    margin-right: auto;   
-    background: #000000;
-    display: flex;
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    background: rgba(0,0,0,0.3);
+    display: inline-block;
     flex-direction: column;
-    
+}
+
+#game-display { 
+	height: 70vh;
+	width: 70vw;
+	border: 1px solid black;
+	display: relative;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+} 
+
+#contact {
+	font-family: 'Architects Daughter';
+	color: white;
+	font-size: 3em;
+	text-align: center;
+	margin: auto;
 }
 
 /* FOR DEVELOPMENT */
