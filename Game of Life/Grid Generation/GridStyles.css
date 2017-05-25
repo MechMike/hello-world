@@ -1,0 +1,21 @@
+.grid-container {
+	height: 50vh;
+	width: 50vw;
+	margin: auto;
+	text-align: center;
+}
+
+.cell {
+	height: auto;
+	width: auto;
+	border: 1px solid black;
+	display: inline-block;
+}
+
+.lane {
+	height: auto;
+	width: auto;
+	display: flex;
+	justify-content: center;
+}
+
