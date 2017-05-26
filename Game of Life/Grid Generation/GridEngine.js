@@ -21,7 +21,7 @@ function main() {
 	
 	function recolorCells(){
 		console.time('Recolor Cells: ');
-		$('.lane').find('.alive').css('background-color', 'red')
+		$('.lane').find('.alive').css('background-color', 'green')
 		
 		// Slower method for coloring cells
 		/*
@@ -40,6 +40,7 @@ function main() {
 		}*/
 		console.timeEnd('Recolor Cells: ');
 	}
+	
 	
 	
 	
