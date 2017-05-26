@@ -1,21 +1,30 @@
 $(document).ready(main);
 
 function main() {
-	var rows = 50;
-	var columns = 50;
+	var rows = 10;
+	var columns = 10;
 	var currentCell;
 	
 	var lifeStatus = [];
 	GenGrid(rows, columns);
-
+	naturalSelection(rows, columns);
+	recolorCells();
+	
+	/*
 	for(var a = 0; a < 10; a++) {
 	setTimeout(function() {
 		naturalSelection(rows, columns);
 		recolorCells();
 	}, 500);
-	} 
+	} */
+	
 	
 	function recolorCells(){
+		console.time('Recolor Cells: ');
+		$('.lane').find('.alive').css('background-color', 'red')
+		
+		// Slower method for coloring cells
+		/*
 		for(var i = 0; i < rows; i++) {
 			for(var j = 0; j < rows; j++) {
 				currentCell = 'row-' + i + '-col-' + j;
@@ -26,14 +35,17 @@ function main() {
 					$('.'+ currentCell).toggleClass('dead');
 					$('.'+ currentCell).css('background-color', 'none');
 				}
-				console.log()
+				
 			}
-		}
+		}*/
+		console.timeEnd('Recolor Cells: ');
 	}
 	
 	
 	
+	
 	function GenGrid(x,y) {
+		console.time('Gen Grid: ');
 		for(var i = 0; i < x; i++) {
 			lifeStatus[i] = [];
 			var currentLane;
@@ -47,17 +59,21 @@ function main() {
 				
 				if(lifeStatus[i][j][1] === 1) {
 					$('.'+ currentCell).addClass('alive');
-					$('.'+ currentCell).css('background-color', 'green');
+					// $('.'+ currentCell).css('background-color', 'green');
 				} else {
 					$('.'+ currentCell).addClass('dead');
-					$('.'+ currentCell).css('background-color', 'none');
+					// $('.'+ currentCell).css('background-color', 'none');
 				}
 			}
 		}
 		SetDimensions(x,y);
+		console.timeEnd('Gen Grid: ');
 	}
 	
+	
+	
 	function naturalSelection(x,y) {
+		console.time('Natural Selection time: ')
 		var updateStatus = lifeStatus;
 		
 		for(var i = 0; i < x; i++) {
@@ -104,15 +120,18 @@ function main() {
 						updateStatus[i][j][1] = 0;
 						break;
 				}
-				console.log(updateStatus[i][j][1]);
+				// console.log(updateStatus[i][j][1]);
 				
 				
 			}
 		}
 		lifeStatus = updateStatus;
+		console.timeEnd('Natural Selection time: ')
 	}
 	
+	
 	function SetDimensions(x,y) {
+		console.time('Set Dimen: ');
 		var displayHeight = parseInt($('.grid-container').css('height'));
 		var displayWidth = parseInt($('.grid-container').css('width'));
 		var windowHL = [(2*displayHeight), (2*displayWidth)];
@@ -130,6 +149,7 @@ function main() {
 		$('.container').css({'margin-top': vSpaceLeft , 'margin-bottom': vSpaceLeft });
 		
 	}
+	console.timeEnd('Set Dimen: ');
 	
 }
 
