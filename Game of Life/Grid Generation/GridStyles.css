@@ -1,4 +1,4 @@
-.game-display {
+#game-display {
 	height: 50vh;
 	width: 50vw;
 	margin: auto;
@@ -6,7 +6,7 @@
 	margin-bottom: 25vh;
 }
 
-.grid-container {
+#grid-container {
 	/* padding-top: 12.5vh;
 	padding-bottom: 12.5vh; */
 }
